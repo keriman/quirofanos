@@ -2,16 +2,16 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>jQuery Mobile: Theme Download</title>
+		<title></title>
 		<link rel="stylesheet" href="themes/tema.min.css" />
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css" />
-		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+		<link rel="stylesheet" href="themes/jquery.mobile.structure-1.3.2.min.css" />
+		<script src="themes/jquery-1.9.1.min.js"></script>
+		<script src="themes/jquery.mobile-1.3.2.min.js"></script>
 	</head>
 	<body>
 		<div data-role="page" data-theme="a">
 			<div data-role="header" data-position="inline">
-				<h1>Hospital Medico Siglo XXI</h1>
+				<h1>Hospital Médico Siglo XXI</h1>
 			</div>
 			<div data-role="content" data-theme="a">
 				<?php
