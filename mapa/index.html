@@ -42,6 +42,11 @@ var marcador
 	  map.setCenter(miubicacion)
 	  marcador.setPosition(miubicacion)
   }
+  function ubicarHospital(){
+	  var latlngmor = new google.maps.LatLng(19.724322,-101.093134);
+	  map.setCenter(latlngmor)
+	  map.setZoom(15)	  
+  }
   
   function errorGPS(){
 	  alerta(" no puedo encontrarte =(")
