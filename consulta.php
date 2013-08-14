@@ -14,22 +14,24 @@
 				<h3>Hospital Médico Siglo XXI</h3>
 			</div>
 			<div data-role="content" data-theme="a">
-				<?php
-$conexion=mysql_connect("localhost","root","class") or die ("No se pudo conectar");
-	mysql_select_db("cirugias") or die ("No se puede seleccionar la base de datos");
+				<?php 
+$conexion=mysql_connect("mysql.hostinger.mx","u325210545_root","Class.1") or die ("No se pudo conectar");
+	mysql_select_db("u325210545_quiro", $conexion) or die ("No se puede seleccionar la base de datos");
 	
 	if(isset($_POST["texto"])){
 		$texto=$_POST["texto"];
 		$result=mysql_query("SELECT nombre,nss FROM pacientes WHERE nss='$texto'" );
-		$res=mysql_num_rows($result);
-		 
-		
-			if($res==0){
-				echo "Ninguna cirugia pendiente!!! <br />";				
-			} else {
+		$dato=mysql_fetch_array($result);
+
+	if ($dato==""){
+		echo "Ninguna cirugia pendiente!!! <br />";
+	}
+		else{
 				echo "CIRUGIA PENDIENTE";
-				}
-			
+				echo $result;
+		}
+
+											
 	}
 	
 ?>
